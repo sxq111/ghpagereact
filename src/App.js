@@ -38,12 +38,14 @@ class App extends Component {
 							<Route path='/home' render={() => {
 								return (<h1>HOME</h1>);
 							}} />
-							<Route path='/page2' component = {DrawBoard} />
-							<Route path='/login' component={LoginContainer} />
-							<Route path='/page404' render={() => {
+							<Route path='/ghpagereact/page2' component = {DrawBoard} />
+							<Route path='/ghpagereact/login' component={LoginContainer} />
+							<Route path='/ghpagereact/page404' render={() => {
 								return (<h1>404 not found</h1>);
 							}} />
-							<Redirect from='/' to='/page404' />
+							{
+							// <Redirect from='/' to='/page404' />
+							}
 						</Switch>
 						{
 							//先禁用登陆验证

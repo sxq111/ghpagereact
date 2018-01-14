@@ -10,13 +10,13 @@ export default (props)=>{
             mode="horizontal">
             <Menu.Item key="home">
                 <Link style = {{display:'inline-block',width:'60px',textAlign:'center'}}
-                to = '/home'>
+                to = '/ghpagereact/home'>
                 主页
                 </Link>
             </Menu.Item>
             <Menu.Item key="page2">
                 <Link style = {{display:'inline-block',width:'60px',textAlign:'center'}}
-                to = '/page2'>
+                to = '/ghpagereact/page2'>
                 page2
                 </Link>
             </Menu.Item>

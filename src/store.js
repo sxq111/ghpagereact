@@ -26,8 +26,8 @@ const myTestMidware_delay = ({ getState, dispatch }) => nextDispatch => {
         let dispatchRst = nextDispatch(action);
     }
 }
-const myEhancer = (createstore)=> (reducer, preloadedState, enhancer) => {
-    const store = createstore(reducer, preloadedState, enhancer);
+const myEhancer = (createstore)=> (reducer, preloadedState) => {
+    const store = createstore(reducer, preloadedState);
     const dispatch = (action)=>{
         console.log('我是一个Enhancer，action为：',action);
         return store.dispatch(action);
