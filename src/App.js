@@ -34,6 +34,7 @@ class App extends Component {
 					<div style={{ width: '100%', background: '#345' }}>
 						<Nav />
 						<Switch>
+						
 							<Route path='/home' render={() => {
 								return (<h1>HOME</h1>);
 							}} />
@@ -46,7 +47,7 @@ class App extends Component {
 						</Switch>
 						{
 							//先禁用登陆验证
-							 <Route path='/' component={Auth} /> 
+							//  <Route path='/' component={Auth} /> 
 						}
 					</div>
 				</BrowserRouter>
